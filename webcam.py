@@ -1,5 +1,7 @@
 from PyQt5.QtWidgets import *
 import sys
+# from interface import camera
+# from interface import videos
 
 
 class Window(QMainWindow):
@@ -7,7 +9,7 @@ class Window(QMainWindow):
         super().__init__()
 
         # set the title of main window
-        self.setWindowTitle('Sidebar layout - www.luochang.ink')
+        self.setWindowTitle('WebCam ')
 
         # set the size of window
         self.Width = 800
@@ -15,19 +17,14 @@ class Window(QMainWindow):
         self.resize(self.Width, self.height)
 
         # add all widgets
-        self.btn_1 = QPushButton('1', self)
-        self.btn_2 = QPushButton('2', self)
-        self.btn_3 = QPushButton('3', self)
-        self.btn_4 = QPushButton('4', self)
-
+        self.btn_1 = QPushButton("1", self)
+        self.btn_2 = QPushButton("2", self)
         self.initUI()
 
     def initUI(self):
         left_layout = QVBoxLayout()
         left_layout.addWidget(self.btn_1)
         left_layout.addWidget(self.btn_2)
-        left_layout.addWidget(self.btn_3)
-        left_layout.addWidget(self.btn_4)
         left_layout.addStretch(5)
         left_layout.setSpacing(20)
         left_widget = QWidget()

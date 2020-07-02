@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="webcam">
+    <file>images/pause.png</file>
+    <file>images/play-button.png</file>
+    <file>images/sound.png</file>
+    <file>images/camera.png</file>
+  </qresource>
+</RCC>
